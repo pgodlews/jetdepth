@@ -3,6 +3,8 @@
 Scripts that convert the Depth Pro 2 monocular depth model to NVIDIA TensorRT on Jetson Orin, check
 the converted engine against PyTorch, and benchmark it.
 
+**[Watch the demo video](https://youtu.be/jc_cAkoPv6M)**
+
 This is an independent project. It is not affiliated with, endorsed by, or supported by Apple,
 Meta, NVIDIA or Hugging Face. It contains no model weights and no upstream source code.
 
