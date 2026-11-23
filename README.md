@@ -1,9 +1,13 @@
 # JetDepth: Depth Pro 2 on Jetson Orin with TensorRT
 
+<p align="center">
+  <a href="https://youtu.be/jc_cAkoPv6M"><img src="https://img.youtube.com/vi/jc_cAkoPv6M/maxresdefault.jpg" alt="Watch the JetDepth demo video on YouTube" width="100%"></a>
+  <br>
+  <a href="https://youtu.be/jc_cAkoPv6M"><strong>▶ Watch the demo on YouTube</strong></a>
+</p>
+
 Scripts that convert the Depth Pro 2 monocular depth model to NVIDIA TensorRT on Jetson Orin, check
 the converted engine against PyTorch, and benchmark it.
-
-**[Watch the demo video](https://youtu.be/jc_cAkoPv6M)**
 
 This is an independent project. It is not affiliated with, endorsed by, or supported by Apple,
 Meta, NVIDIA or Hugging Face. It contains no model weights and no upstream source code.
