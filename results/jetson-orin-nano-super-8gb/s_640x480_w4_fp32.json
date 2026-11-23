@@ -1,0 +1,238 @@
+{
+  "accuracy_vs_pytorch": {
+    "natural": {
+      "frames": 16,
+      "median_rel": 4.6251490857684985e-05,
+      "min_correlation": 0.9999998263899834,
+      "nonfinite": 0,
+      "p99_rel": 0.00144134336849674,
+      "pixels": 4915200,
+      "worst_frame_p99_rel": 0.001903991191647947
+    },
+    "repeat_after_reset_max_abs": 0.0,
+    "stress": {
+      "frames": 5,
+      "median_rel": 0.0011097664246335626,
+      "min_correlation": 0.9993509979194548,
+      "nonfinite": 0,
+      "p99_rel": 0.008848968930542468,
+      "pixels": 1536000,
+      "worst_frame_p99_rel": 0.008988098483532667
+    }
+  },
+  "contention": {
+    "gpu_busy_or_shared": false,
+    "reasons": [],
+    "watched_cpu_seconds": 0.0,
+    "watched_process_count": 0
+  },
+  "device": "Jetson Orin Nano Super 8 GB",
+  "device_tree_model": "NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super",
+  "during_run": {
+    "gpu_freq_mhz": {
+      "max": 1020.0,
+      "median": 1020.0,
+      "min": 1020.0,
+      "p95": 1020.0
+    },
+    "gpu_load_percent": {
+      "max": 99.8,
+      "median": 99.7,
+      "min": 96.4,
+      "p95": 99.8
+    },
+    "mem_available_mb": {
+      "max": 4698.4921875,
+      "median": 4693.30078125,
+      "min": 4692.86328125,
+      "p95": 4698.4921875
+    },
+    "power_w": {
+      "VDD_CPU_GPU_CV": {
+        "max": 9.618432,
+        "median": 9.463296,
+        "min": 9.424512,
+        "p95": 9.540864
+      },
+      "VDD_IN": {
+        "max": 20.306496,
+        "median": 20.111616,
+        "min": 20.07264,
+        "p95": 20.189568
+      },
+      "VDD_SOC": {
+        "max": 4.980736,
+        "median": 4.941824,
+        "min": 4.902912,
+        "p95": 4.980736
+      }
+    },
+    "samples": 60,
+    "temperature_c": {
+      "cpu-thermal": {
+        "max": 60.937,
+        "median": 59.1715,
+        "min": 56.781,
+        "p95": 60.8446
+      },
+      "gpu-thermal": {
+        "max": 64.5,
+        "median": 62.687,
+        "min": 60.156,
+        "p95": 64.28255
+      },
+      "soc0-thermal": {
+        "max": 59.562,
+        "median": 57.8275,
+        "min": 55.531,
+        "p95": 59.3477
+      },
+      "soc1-thermal": {
+        "max": 60.687,
+        "median": 58.9685,
+        "min": 56.718,
+        "p95": 60.625
+      },
+      "soc2-thermal": {
+        "max": 60.468,
+        "median": 58.7025,
+        "min": 56.187,
+        "p95": 60.2227
+      },
+      "tj-thermal": {
+        "max": 64.5,
+        "median": 62.687,
+        "min": 60.125,
+        "p95": 64.28255
+      }
+    }
+  },
+  "engine_mb": 102.14892959594727,
+  "engine_sha256": "0c0ad2906d0fc088de03dac8172b802966e7c9852ea0072ce458b9583fb1b303",
+  "frames_source": "upstream assets/example.mp4, frames 32-47, resized",
+  "height": 480,
+  "idle": {
+    "gpu_freq_mhz": {
+      "max": 1020.0,
+      "median": 1020.0,
+      "min": 1020.0,
+      "p95": 1020.0
+    },
+    "gpu_load_percent": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "p95": 0.0
+    },
+    "mem_available_mb": {
+      "max": 5553.48828125,
+      "median": 5553.48046875,
+      "min": 5553.48046875,
+      "p95": 5553.48828125
+    },
+    "power_w": {
+      "VDD_CPU_GPU_CV": {
+        "max": 2.146176,
+        "median": 1.470528,
+        "min": 1.46816,
+        "p95": 1.9303487999999995
+      },
+      "VDD_IN": {
+        "max": 7.523712,
+        "median": 6.478272,
+        "min": 6.478272,
+        "p95": 7.196342399999999
+      },
+      "VDD_SOC": {
+        "max": 2.344896,
+        "median": 2.265408,
+        "min": 2.265408,
+        "p95": 2.3091264
+      }
+    },
+    "samples": 10,
+    "temperature_c": {
+      "cpu-thermal": {
+        "max": 55.531,
+        "median": 54.968,
+        "min": 54.687,
+        "p95": 55.3762
+      },
+      "gpu-thermal": {
+        "max": 56.593,
+        "median": 56.3125,
+        "min": 56.0,
+        "p95": 56.57905
+      },
+      "soc0-thermal": {
+        "max": 54.843,
+        "median": 54.7025,
+        "min": 54.5,
+        "p95": 54.82905
+      },
+      "soc1-thermal": {
+        "max": 56.562,
+        "median": 56.4525,
+        "min": 56.25,
+        "p95": 56.548049999999996
+      },
+      "soc2-thermal": {
+        "max": 54.906,
+        "median": 54.4525,
+        "min": 54.343,
+        "p95": 54.8637
+      },
+      "tj-thermal": {
+        "max": 56.593,
+        "median": 56.484,
+        "min": 56.25,
+        "p95": 56.57905
+      }
+    }
+  },
+  "memory": {
+    "note": "Orin GPU memory is shared with the CPU; nvgpu reports no per-process GPU memory.",
+    "process_peak_rss_mb": 1383.43359375,
+    "system_mem_available_min_during_run_mb": 4692.86328125,
+    "system_mem_drop_on_load_mb": 841.5234375,
+    "torch_allocated_mb": 173.6728515625
+  },
+  "model": "depthpro2-s",
+  "power_mode": {
+    "id": 2,
+    "name": "MAXN_SUPER"
+  },
+  "precision": "fp32",
+  "schema": 1,
+  "thresholds": {
+    "max_median_rel": 0.01,
+    "max_p99_rel": 0.05,
+    "min_correlation": 0.999
+  },
+  "timestamp_utc": "2026-11-23T15:55:26Z",
+  "timing": {
+    "fps_from_median_latency": 9.987367179036564,
+    "fps_from_p95_latency": 9.906375420599757,
+    "fps_sustained_including_upload": 9.961633651213088,
+    "frames": 299,
+    "latency_ms_median": 100.12648799965973,
+    "latency_ms_p95": 100.945094198687,
+    "latency_ms_p99": 101.15656453923293,
+    "scope": "TensorRT execution only, frame already in GPU memory",
+    "seconds": 30.015157198999077,
+    "warmup_frames": 30
+  },
+  "versions": {
+    "l4t": "36.5.2",
+    "numpy": "1.26.4",
+    "onnx": "1.18.0",
+    "onnxruntime": "1.22.1",
+    "python": "3.10.12",
+    "tensorrt": "10.3.0",
+    "torch": "2.8.0",
+    "torch_cuda": "12.6",
+    "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0"
+  },
+  "width": 640,
+  "window": 4
+}

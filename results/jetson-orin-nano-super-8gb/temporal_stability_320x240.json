@@ -1,0 +1,36 @@
+{
+  "caveat": "The camera moves, so these include real scene change.",
+  "definition": "relative change = |d[t] - d[t-1]| / (|d[t-1]| + 0.001), pooled over pixels and frame pairs; scale jump = |median(d[t]) / median(d[t-1]) - 1|; d is inverse depth",
+  "device": "Jetson Orin Nano Super 8 GB",
+  "frames_source": "upstream assets/example.mp4, 61 consecutive decoded frames, resized",
+  "height": 240,
+  "model": "depthpro2-s",
+  "precision": "fp16",
+  "schema": 1,
+  "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0",
+  "warmup_frames_excluded": 8,
+  "width": 320,
+  "window_1": {
+    "frame_pairs": 52,
+    "relative_change_median": 0.00884656049311161,
+    "relative_change_p95": 0.13605683371424665,
+    "scale_jump_max": 0.09315746084089027,
+    "scale_jump_median": 0.02976676570074921,
+    "scale_jump_p95": 0.07069116467051806
+  },
+  "window_1_over_window_4": {
+    "relative_change_median": 2.3628220246720297,
+    "relative_change_p95": 1.4121155078503567,
+    "scale_jump_max": 2.3052237128082127,
+    "scale_jump_median": 3.276554388779977,
+    "scale_jump_p95": 2.5838898260438468
+  },
+  "window_4": {
+    "frame_pairs": 52,
+    "relative_change_median": 0.0037440655287355185,
+    "relative_change_p95": 0.09634964913129807,
+    "scale_jump_max": 0.040411462160176326,
+    "scale_jump_median": 0.009084776923795501,
+    "scale_jump_p95": 0.027358428350156165
+  }
+}

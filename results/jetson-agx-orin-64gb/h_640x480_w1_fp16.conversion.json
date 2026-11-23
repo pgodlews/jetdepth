@@ -1,0 +1,92 @@
+{
+  "failures": [
+    "p99 difference 6.2978% > 5.0000%"
+  ],
+  "height": 480,
+  "model": "depthpro2-h",
+  "name": "h_640x480_w1_fp16",
+  "passed": false,
+  "precision": "fp16",
+  "stages": {
+    "build": {
+      "exit_status": 0,
+      "min_mem_available_mb": 29288.8,
+      "peak_rss_mb": 14553.9,
+      "result": {
+        "engine_mb": 1771.7638206481934
+      },
+      "seconds": 454.2
+    },
+    "export": {
+      "exit_status": 0,
+      "min_mem_available_mb": 33023.0,
+      "peak_rss_mb": 9353.0,
+      "result": {
+        "attention_divisors": {
+          "0": 16.0,
+          "1": 8.0
+        },
+        "attention_products_split_for_fp16": 0,
+        "explicit_memory_pytorch_vs_reference": {
+          "frames": 16,
+          "median_rel": 4.963067567587132e-06,
+          "min_correlation": 0.9999999977344587,
+          "nonfinite": 0,
+          "p99_rel": 0.00024031739711062697,
+          "pixels": 4915200,
+          "worst_frame_p99_rel": 0.0002499620732851332
+        },
+        "memory_tensors": {},
+        "onnx_mb": 3364.8667726516724,
+        "onnx_runtime_vs_reference": null,
+        "residual_divisor": 4.0
+      },
+      "seconds": 181.9
+    },
+    "reference": {
+      "exit_status": 0,
+      "min_mem_available_mb": 36272.1,
+      "peak_rss_mb": 7724.2,
+      "result": {
+        "natural_frames": 16,
+        "stress_frames": 5
+      },
+      "seconds": 101.8
+    },
+    "verify": {
+      "exit_status": 0,
+      "min_mem_available_mb": 45576.0,
+      "peak_rss_mb": 4149.8,
+      "result": {
+        "natural": {
+          "frames": 16,
+          "median_rel": 0.00359003571793437,
+          "min_correlation": 0.9992651555896301,
+          "nonfinite": 0,
+          "p99_rel": 0.06297814615070675,
+          "pixels": 4915200,
+          "worst_frame_p99_rel": 0.10099263630807419
+        },
+        "repeat_after_reset_max_abs": 0.0,
+        "stress": {
+          "frames": 5,
+          "median_rel": 0.028646765276789665,
+          "min_correlation": 0.5985579548538816,
+          "nonfinite": 0,
+          "p99_rel": 0.10270068503916265,
+          "pixels": 1536000,
+          "worst_frame_p99_rel": 0.10992235593497754
+        }
+      },
+      "seconds": 9.1
+    }
+  },
+  "thresholds": {
+    "max_median_rel": 0.01,
+    "max_p99_rel": 0.05,
+    "min_correlation": 0.999
+  },
+  "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0",
+  "width": 640,
+  "window": 1
+}

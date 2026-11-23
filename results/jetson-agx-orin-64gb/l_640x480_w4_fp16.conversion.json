@@ -1,0 +1,241 @@
+{
+  "failures": [
+    "p99 difference 13.2811% > 5.0000%",
+    "correlation 0.998996 < 0.999"
+  ],
+  "height": 480,
+  "model": "depthpro2-l",
+  "name": "l_640x480_w4_fp16",
+  "passed": false,
+  "precision": "fp16",
+  "stages": {
+    "build": {
+      "exit_status": 0,
+      "min_mem_available_mb": 35338.2,
+      "peak_rss_mb": 6609.2,
+      "result": {
+        "engine_mb": 647.4389533996582
+      },
+      "seconds": 465.1
+    },
+    "export": {
+      "exit_status": 0,
+      "min_mem_available_mb": 34190.2,
+      "peak_rss_mb": 8781.6,
+      "result": {
+        "attention_divisors": {
+          "1": 16.0,
+          "11": 1.0,
+          "13": 1.0,
+          "15": 1.0,
+          "17": 1.0,
+          "19": 1.0,
+          "21": 1.0,
+          "23": 1.0,
+          "9": 1.0
+        },
+        "attention_products_split_for_fp16": 8,
+        "explicit_memory_pytorch_vs_reference": {
+          "frames": 16,
+          "median_rel": 4.000548869953491e-06,
+          "min_correlation": 0.9999999971801917,
+          "nonfinite": 0,
+          "p99_rel": 0.00030765156028792254,
+          "pixels": 4915200,
+          "worst_frame_p99_rel": 0.00032106222090078545
+        },
+        "memory_tensors": {
+          "filled": [
+            4,
+            32
+          ],
+          "keys_11": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_13": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_15": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_17": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_19": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_21": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_23": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "keys_9": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "prefixes_11": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_13": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_15": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_17": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_19": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_21": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_23": [
+            4,
+            5,
+            1024
+          ],
+          "prefixes_9": [
+            4,
+            5,
+            1024
+          ],
+          "values_11": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_13": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_15": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_17": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_19": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_21": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_23": [
+            1,
+            16,
+            4800,
+            64
+          ],
+          "values_9": [
+            1,
+            16,
+            4800,
+            64
+          ]
+        },
+        "onnx_mb": 1302.470594406128,
+        "onnx_runtime_vs_reference": null,
+        "residual_divisor": 8.0
+      },
+      "seconds": 102.8
+    },
+    "reference": {
+      "exit_status": 0,
+      "min_mem_available_mb": 38339.5,
+      "peak_rss_mb": 3744.1,
+      "result": {
+        "natural_frames": 16,
+        "stress_frames": 5
+      },
+      "seconds": 15.3
+    },
+    "verify": {
+      "exit_status": 0,
+      "min_mem_available_mb": 39517.9,
+      "peak_rss_mb": 2584.6,
+      "result": {
+        "natural": {
+          "frames": 16,
+          "median_rel": 0.00754022691398859,
+          "min_correlation": 0.9989963029573024,
+          "nonfinite": 0,
+          "p99_rel": 0.1328105415403841,
+          "pixels": 4915200,
+          "worst_frame_p99_rel": 0.1566174891591074
+        },
+        "repeat_after_reset_max_abs": 0.0,
+        "stress": {
+          "frames": 5,
+          "median_rel": 0.02208394929766655,
+          "min_correlation": 0.5503181356559812,
+          "nonfinite": 0,
+          "p99_rel": 0.1254982505738735,
+          "pixels": 1536000,
+          "worst_frame_p99_rel": 0.1268080922961235
+        }
+      },
+      "seconds": 10.0
+    }
+  },
+  "thresholds": {
+    "max_median_rel": 0.01,
+    "max_p99_rel": 0.05,
+    "min_correlation": 0.999
+  },
+  "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0",
+  "width": 640,
+  "window": 4
+}

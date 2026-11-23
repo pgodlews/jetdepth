@@ -1,0 +1,13 @@
+# Installed after torch==2.8.0 and torchvision==0.23.0 from the Jetson index.
+# See scripts/setup_jetson.sh. TensorRT comes from JetPack and is linked into the venv.
+numpy<2
+opencv-python-headless<4.12
+onnx==1.18.0
+onnxruntime==1.22.1
+timm>=1.0.27,<1.1
+av>=14.1
+click
+huggingface-hub>=1.0
+matplotlib
+pillow>=11.3
+pillow-heif

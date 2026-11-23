@@ -1,0 +1,250 @@
+{
+  "accuracy_vs_pytorch": {
+    "natural": {
+      "frames": 16,
+      "median_rel": 0.0004770341911353171,
+      "min_correlation": 0.9999886709675079,
+      "nonfinite": 0,
+      "p99_rel": 0.020049911532551073,
+      "pixels": 1228800,
+      "worst_frame_p99_rel": 0.05187115021049938
+    },
+    "repeat_after_reset_max_abs": 0.0,
+    "stress": {
+      "frames": 5,
+      "median_rel": 0.00810063723474741,
+      "min_correlation": 0.9973368931256134,
+      "nonfinite": 0,
+      "p99_rel": 0.015304537406191233,
+      "pixels": 384000,
+      "worst_frame_p99_rel": 0.016295993700623512
+    }
+  },
+  "contention": {
+    "gpu_busy_or_shared": false,
+    "reasons": [],
+    "watched_cpu_seconds": 0.0,
+    "watched_process_count": 1
+  },
+  "device": "Jetson AGX Orin 64 GB",
+  "device_tree_model": "NVIDIA Jetson AGX Orin Developer Kit",
+  "during_run": {
+    "gpu_freq_mhz": {
+      "max": 1300.5,
+      "median": 1300.5,
+      "min": 1300.5,
+      "p95": 1300.5
+    },
+    "gpu_load_percent": {
+      "max": 93.3,
+      "median": 92.9,
+      "min": 0.0,
+      "p95": 93.2
+    },
+    "mem_available_mb": {
+      "max": 41137.875,
+      "median": 41127.125,
+      "min": 41117.5625,
+      "p95": 41136.953125
+    },
+    "power_w": {
+      "VDDQ_VDD2_1V8AO": {
+        "max": 2.8224,
+        "median": 2.8224,
+        "min": 1.7136,
+        "p95": 2.8224
+      },
+      "VDD_CPU_CV": {
+        "max": 4.79424,
+        "median": 1.59936,
+        "min": 1.59872,
+        "p95": 2.39808
+      },
+      "VDD_GPU_SOC": {
+        "max": 26.77856,
+        "median": 26.77856,
+        "min": 11.58608,
+        "p95": 26.77856
+      },
+      "VIN_SYS_5V0": {
+        "max": 8.0768,
+        "median": 7.97584,
+        "min": 6.1488,
+        "p95": 7.97584
+      }
+    },
+    "samples": 59,
+    "temperature_c": {
+      "cpu-thermal": {
+        "max": 54.968,
+        "median": 53.906,
+        "min": 51.875,
+        "p95": 54.812
+      },
+      "gpu-thermal": {
+        "max": 54.0,
+        "median": 52.781,
+        "min": 49.062,
+        "p95": 53.781
+      },
+      "soc0-thermal": {
+        "max": 51.281,
+        "median": 50.406,
+        "min": 48.281,
+        "p95": 51.159099999999995
+      },
+      "soc1-thermal": {
+        "max": 50.437,
+        "median": 49.406,
+        "min": 47.656,
+        "p95": 50.253099999999996
+      },
+      "soc2-thermal": {
+        "max": 50.718,
+        "median": 49.75,
+        "min": 47.437,
+        "p95": 50.687
+      },
+      "tj-thermal": {
+        "max": 54.968,
+        "median": 53.937,
+        "min": 51.875,
+        "p95": 54.812
+      }
+    }
+  },
+  "engine_mb": 55.28574752807617,
+  "engine_sha256": "2be8f1b71d64af1f04a8e2324a566c0d58135534466a5b5c513a64f05fe82fc3",
+  "frames_source": "upstream assets/example.mp4, frames 32-47, resized",
+  "height": 240,
+  "idle": {
+    "gpu_freq_mhz": {
+      "max": 1300.5,
+      "median": 1300.5,
+      "min": 1300.5,
+      "p95": 1300.5
+    },
+    "gpu_load_percent": {
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "p95": 0.0
+    },
+    "mem_available_mb": {
+      "max": 41592.1484375,
+      "median": 41589.4765625,
+      "min": 41589.4765625,
+      "p95": 41592.1484375
+    },
+    "power_w": {
+      "VDDQ_VDD2_1V8AO": {
+        "max": 0.8064,
+        "median": 0.4032,
+        "min": 0.4032,
+        "p95": 0.6703199999999997
+      },
+      "VDD_CPU_CV": {
+        "max": 2.79776,
+        "median": 1.19856,
+        "min": 1.19856,
+        "p95": 2.2581919999999984
+      },
+      "VDD_GPU_SOC": {
+        "max": 4.79424,
+        "median": 4.79424,
+        "min": 4.79424,
+        "p95": 4.79424
+      },
+      "VIN_SYS_5V0": {
+        "max": 4.8384,
+        "median": 4.3344,
+        "min": 4.3344,
+        "p95": 4.65696
+      }
+    },
+    "samples": 10,
+    "temperature_c": {
+      "cpu-thermal": {
+        "max": 51.531,
+        "median": 51.2655,
+        "min": 51.062,
+        "p95": 51.4608
+      },
+      "gpu-thermal": {
+        "max": 47.25,
+        "median": 46.812,
+        "min": 46.75,
+        "p95": 47.1231
+      },
+      "soc0-thermal": {
+        "max": 48.187,
+        "median": 48.109,
+        "min": 48.093,
+        "p95": 48.187
+      },
+      "soc1-thermal": {
+        "max": 47.656,
+        "median": 47.656,
+        "min": 47.593,
+        "p95": 47.656
+      },
+      "soc2-thermal": {
+        "max": 47.062,
+        "median": 46.906,
+        "min": 46.843,
+        "p95": 47.062
+      },
+      "tj-thermal": {
+        "max": 51.531,
+        "median": 51.2655,
+        "min": 51.062,
+        "p95": 51.4608
+      }
+    }
+  },
+  "memory": {
+    "note": "Orin GPU memory is shared with the CPU; nvgpu reports no per-process GPU memory.",
+    "process_peak_rss_mb": 1020.3984375,
+    "system_mem_available_min_during_run_mb": 41117.5625,
+    "system_mem_drop_on_load_mb": 371.90625,
+    "torch_allocated_mb": 30.3525390625
+  },
+  "model": "depthpro2-s",
+  "power_mode": {
+    "id": 0,
+    "name": "MAXN"
+  },
+  "precision": "fp16",
+  "schema": 1,
+  "thresholds": {
+    "max_median_rel": 0.01,
+    "max_p99_rel": 0.05,
+    "min_correlation": 0.999
+  },
+  "timestamp_utc": "2026-11-23T15:27:31Z",
+  "timing": {
+    "fps_from_median_latency": 194.94579970757454,
+    "fps_from_p95_latency": 193.82613243836576,
+    "fps_sustained_including_upload": 191.59783706476708,
+    "frames": 5748,
+    "latency_ms_median": 5.129630910232663,
+    "latency_ms_p95": 5.1592630334198475,
+    "latency_ms_p99": 5.1785170659422874,
+    "scope": "TensorRT execution only, frame already in GPU memory",
+    "seconds": 30.00033866800368,
+    "warmup_frames": 30
+  },
+  "versions": {
+    "l4t": "36.5.2",
+    "numpy": "1.26.4",
+    "onnx": "1.18.0",
+    "onnxruntime": "1.22.1",
+    "python": "3.10.12",
+    "tensorrt": "10.3.0",
+    "torch": "2.8.0",
+    "torch_cuda": "12.6",
+    "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0"
+  },
+  "width": 320,
+  "window": 4
+}

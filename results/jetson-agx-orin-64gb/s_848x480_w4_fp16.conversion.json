@@ -1,0 +1,175 @@
+{
+  "engine_sha256": "beba2ba316e2875a4592240b2b52347bcec37012882d1e8ba8920647ad19e796",
+  "failures": [],
+  "height": 480,
+  "model": "depthpro2-s",
+  "name": "s_848x480_w4_fp16",
+  "passed": true,
+  "precision": "fp16",
+  "stages": {
+    "build": {
+      "exit_status": 0,
+      "min_mem_available_mb": 38298.4,
+      "peak_rss_mb": 3636.0,
+      "result": {
+        "engine_mb": 52.931453704833984
+      },
+      "seconds": 346.5
+    },
+    "export": {
+      "exit_status": 0,
+      "min_mem_available_mb": 37675.2,
+      "peak_rss_mb": 4513.0,
+      "result": {
+        "attention_divisors": {
+          "0": 2048.0,
+          "11": 1.0,
+          "5": 1.0,
+          "7": 1.0,
+          "9": 1.0
+        },
+        "attention_products_split_for_fp16": 4,
+        "explicit_memory_pytorch_vs_reference": {
+          "frames": 16,
+          "median_rel": 6.318993200693512e-06,
+          "min_correlation": 0.9999999963268663,
+          "nonfinite": 0,
+          "p99_rel": 0.00024646076693898194,
+          "pixels": 6512640,
+          "worst_frame_p99_rel": 0.00028529330505989455
+        },
+        "memory_tensors": {
+          "filled": [
+            4,
+            32
+          ],
+          "keys_11": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "keys_5": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "keys_7": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "keys_9": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "prefixes_11": [
+            4,
+            5,
+            384
+          ],
+          "prefixes_5": [
+            4,
+            5,
+            384
+          ],
+          "prefixes_7": [
+            4,
+            5,
+            384
+          ],
+          "prefixes_9": [
+            4,
+            5,
+            384
+          ],
+          "values_11": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "values_5": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "values_7": [
+            1,
+            6,
+            6480,
+            64
+          ],
+          "values_9": [
+            1,
+            6,
+            6480,
+            64
+          ]
+        },
+        "onnx_mb": 111.93240737915039,
+        "onnx_runtime_vs_reference": {
+          "frames": 6,
+          "median_rel": 9.128256351687014e-06,
+          "min_correlation": 0.9999999945144392,
+          "nonfinite": 0,
+          "p99_rel": 0.00030387677310500245,
+          "pixels": 2442240,
+          "worst_frame_p99_rel": 0.00032920953992288555
+        },
+        "residual_divisor": 1.0
+      },
+      "seconds": 39.4
+    },
+    "reference": {
+      "exit_status": 0,
+      "min_mem_available_mb": 40333.4,
+      "peak_rss_mb": 1850.4,
+      "result": {
+        "natural_frames": 16,
+        "stress_frames": 5
+      },
+      "seconds": 7.9
+    },
+    "verify": {
+      "exit_status": 0,
+      "min_mem_available_mb": 40558.4,
+      "peak_rss_mb": 1630.2,
+      "result": {
+        "natural": {
+          "frames": 16,
+          "median_rel": 0.00024228618713095784,
+          "min_correlation": 0.9999889755418708,
+          "nonfinite": 0,
+          "p99_rel": 0.009098241981118934,
+          "pixels": 6512640,
+          "worst_frame_p99_rel": 0.011559892697259776
+        },
+        "repeat_after_reset_max_abs": 0.0,
+        "stress": {
+          "frames": 5,
+          "median_rel": 0.004416922573000193,
+          "min_correlation": 0.9872291983813873,
+          "nonfinite": 0,
+          "p99_rel": 0.011886286670342089,
+          "pixels": 2035200,
+          "worst_frame_p99_rel": 0.012728440510109067
+        }
+      },
+      "seconds": 6.0
+    }
+  },
+  "thresholds": {
+    "max_median_rel": 0.01,
+    "max_p99_rel": 0.05,
+    "min_correlation": 0.999
+  },
+  "upstream_commit": "aa389cbb0b74341664ed663a0966c859905cd6c0",
+  "width": 848,
+  "window": 4
+}
